@@ -4,8 +4,11 @@ import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.3
 
 Window {
-    width: 1200
-    height: 800
+    property int mWINDOW_WIDTH: 1200
+    property int mWINDOW_HEIGHT: 800
+    id: window
+    width: mWINDOW_WIDTH
+    height: mWINDOW_HEIGHT
     visible: true
     title: qsTr("Hello World")
 
